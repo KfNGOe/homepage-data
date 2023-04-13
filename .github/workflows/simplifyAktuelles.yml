@@ -11,7 +11,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: simplifyAktuelles
-        run: ./scripts/simplifyAktuelles.sh
+        run: sudo chmod +x ./scripts/simplifyAktuelles.sh && ./scripts/simplifyAktuelles.sh
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: simplifyAktuelles
